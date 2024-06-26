@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #ff5722;
+  --color-primary-light: #ff7a50;
+  --color-secondary-light: #fff6f2;
+  --color-secondary-dark: #ffa589;
+  --color-navbar: #f8f8f8;
+  --color-headings: #000;
+  --color-body: #333333;
+  --color-white: #fff;
+  --btn-border-radius: 8px;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: var(--color-body);
+}
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  font-weight: 700;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+.btn {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  padding: 2rem 2.5rem;
+  border-radius: var(--btn-border-radius);
+  font-family: vazir;
+  margin: 1rem 0;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.4rem;
+}
+.btn--primary {
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+}
+.btn--secondary {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-white);
+}
+.btn--block {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+  }
+  .btn--block {
+    font-size: 2rem;
+  }
+}
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1em;
+  background-color: #fff;
+  color: var(--color-primary);
+  border-radius: 32px;
+  border: 2px solid var(--color-primary);
+  text-transform: uppercase;
+}
+.badge--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.list {
+  list-style: none;
+  font-size: 1.8rem;
+}
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.list--tick .list__item {
+  background: url(../../assets/images/Tick-Square.svg) no-repeat right center;
+  padding-right: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    margin-bottom: 2.5rem;
+  }
+  .list {
+    font-size: 1.4rem;
+  }
+}
